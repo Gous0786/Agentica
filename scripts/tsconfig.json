@@ -1,0 +1,10 @@
+{
+  "extends": "../tsconfig.base.json",
+  "compilerOptions": {
+    "allowImportingTsExtensions": true,
+    // Node runs these files directly with type stripping.
+    "erasableSyntaxOnly": true,
+    "types": ["node"]
+  },
+  "include": ["./**/*.ts", "../registry/registry.config.ts"]
+}

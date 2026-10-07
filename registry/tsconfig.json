@@ -1,0 +1,13 @@
+{
+  // Registry files are copied into consumer apps, so they must compile under the
+  // strictest settings a consumer is likely to use. Paths mirror install targets.
+  "extends": "../tsconfig.base.json",
+  "compilerOptions": {
+    "paths": {
+      "@/lib/agentica/*": ["./lib/agentica/*"],
+      "@/components/agentica/*": ["./ui/*"]
+    },
+    "types": []
+  },
+  "include": ["lib/**/*", "ui/**/*", "registry.config.ts"]
+}

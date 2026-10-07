@@ -1,0 +1,55 @@
+/*
+ * Agentica design tokens: the single source of truth.
+ * - Imported directly by the docs site.
+ * - Parsed by scripts/build-registry.ts into the `agentica-theme` registry item's
+ *   `cssVars`, which the shadcn CLI merges into the consumer's global CSS.
+ * Keep to the three blocks below with simple `--name: value;` declarations.
+ *
+ * Visuals reference these by name (e.g. useColors(ref, { base: "--agentica-primary" })),
+ * so re-theming the variables re-themes every visual, including WebGL ones.
+ */
+
+@theme inline {
+  --color-agentica-background: var(--agentica-background);
+  --color-agentica-foreground: var(--agentica-foreground);
+  --color-agentica-muted: var(--agentica-muted);
+  --color-agentica-primary: var(--agentica-primary);
+  --color-agentica-accent: var(--agentica-accent);
+  --color-agentica-glow: var(--agentica-glow);
+  --color-agentica-idle: var(--agentica-idle);
+  --color-agentica-connecting: var(--agentica-connecting);
+  --color-agentica-listening: var(--agentica-listening);
+  --color-agentica-thinking: var(--agentica-thinking);
+  --color-agentica-speaking: var(--agentica-speaking);
+  --color-agentica-error: var(--agentica-error);
+}
+
+:root {
+  --agentica-background: oklch(0.99 0.002 270);
+  --agentica-foreground: oklch(0.2 0.02 270);
+  --agentica-muted: oklch(0.93 0.01 270);
+  --agentica-primary: oklch(0.6 0.2 268);
+  --agentica-accent: oklch(0.68 0.2 325);
+  --agentica-glow: oklch(0.76 0.14 230);
+  --agentica-idle: oklch(0.68 0.03 270);
+  --agentica-connecting: oklch(0.72 0.12 235);
+  --agentica-listening: oklch(0.66 0.15 200);
+  --agentica-thinking: oklch(0.6 0.21 295);
+  --agentica-speaking: oklch(0.6 0.2 268);
+  --agentica-error: oklch(0.6 0.22 25);
+}
+
+.dark {
+  --agentica-background: oklch(0.15 0.015 270);
+  --agentica-foreground: oklch(0.96 0.005 270);
+  --agentica-muted: oklch(0.26 0.02 270);
+  --agentica-primary: oklch(0.7 0.18 268);
+  --agentica-accent: oklch(0.74 0.19 325);
+  --agentica-glow: oklch(0.82 0.13 230);
+  --agentica-idle: oklch(0.55 0.03 270);
+  --agentica-connecting: oklch(0.76 0.12 235);
+  --agentica-listening: oklch(0.78 0.14 200);
+  --agentica-thinking: oklch(0.72 0.19 295);
+  --agentica-speaking: oklch(0.7 0.18 268);
+  --agentica-error: oklch(0.68 0.21 25);
+}
